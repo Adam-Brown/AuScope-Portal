@@ -24,7 +24,7 @@ public class TestMineFilter extends PortalTestClass {
         MineFilter mineFilter = new MineFilter("");
 
         String filter = mineFilter.getFilterStringAllRecords();
-        Assert.assertEquals("<ogc:Filter><ogc:PropertyIsLike escapeChar=\"!\" wildCard=\"*\" matchCase=\"false\" singleChar=\"#\" ><ogc:PropertyName>er:specification/er:Mine/gml:name</ogc:PropertyName><ogc:Literal>*</ogc:Literal></ogc:PropertyIsLike></ogc:Filter>", filter);
+        Assert.assertEquals("<ogc:Filter><ogc:PropertyIsLike escapeChar=\"!\" singleChar=\"#\" matchCase=\"false\" wildCard=\"*\" ><ogc:PropertyName>er:specification/er:Mine/gml:name</ogc:PropertyName><ogc:Literal>*</ogc:Literal></ogc:PropertyIsLike></ogc:Filter>", filter);
     }
 
     /**
